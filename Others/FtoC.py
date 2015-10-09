@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 from __future__ import division
 
-=======
->>>>>>> b1798038cbfdae99b0765ed1202cd0f2089e8a5a
 def Celtofah(cel):
     Fah = (cel*1.8) + 32.0
     return Fah
