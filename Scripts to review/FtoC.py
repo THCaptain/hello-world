@@ -1,9 +1,9 @@
 from __future__ import division
 
-def Celtofah(cel):
+def Celtofah(cel):              #Celsius to Fahrenheit function
     Fah = (cel*1.8) + 32.0
     return Fah
-def Fahtocel(Fah):
+def Fahtocel(Fah):              #Fahrenheit to Celsius function
     Cel = (Fah - 32.0) / 1.8
     return Cel
 
