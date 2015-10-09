@@ -1,6 +1,5 @@
-from __future__ import with_statement #code from stackoverflow answers
+from __future__ import with_statement #function from stackoverflow answers
 import decimal                          # https://stackoverflow.com/questions/347734/gauss-legendre-algorithm-in-python
-
 
 def pi_gauss_legendre():
     D = decimal.Decimal
@@ -18,8 +17,13 @@ def pi_gauss_legendre():
             if pi == piold:                                     # equal within given precision
                 break                                           #
     return +pi
-
-
-decimal.getcontext().prec = 2500
-print pi_gauss_legendre()
+print "How many digits of Pi would you like to compute? (3000 max)\n ****************"
+digits = input('*>')
+if digits > 3000:
+    print "TURN UP! This guy is crazy as fuck he's gotta be on molly or some powder or something"
+    exit (0)
+else:
+    print "Coming right up, homie.....\n"
+decimal.getcontext().prec = digits
+print "Result:\n", pi_gauss_legendre()
 
