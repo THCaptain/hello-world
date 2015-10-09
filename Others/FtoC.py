@@ -1,5 +1,3 @@
-import math
-
 def Celtofah(cel):
     Fah = (cel*1.8) + 32
     return Fah
